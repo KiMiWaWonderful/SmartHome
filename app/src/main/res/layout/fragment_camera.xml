@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal|center_vertical"
+    android:orientation="vertical"
+    android:id="@+id/action_linearLayout"
+    android:background="@color/white">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/linear_one"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_title_height"
+        android:background="@color/divider"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <TextView
+            android:id="@+id/tv_activity_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.66"
+            android:gravity="center"
+            android:text="@string/data_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/activity_title_size"/>
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <TableRow>
+            <include layout="@layout/layout_webview" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </TableRow>
+        <TableRow>
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab_speak"
+                android:layout_width="@dimen/fab_size_mini"
+                android:layout_height="@dimen/fab_size_mini"
+                android:layout_margin="20dp"
+                app:backgroundTint="@color/white"
+                app:elevation="10dp"
+                app:fabSize="normal"
+                app:layout_anchorGravity="bottom|right|end"
+                app:pressedTranslationZ="10dp"
+                app:rippleColor="#33728dff"
+                app:useCompatPadding="false"
+                android:src="@drawable/speak"
+                android:clickable="true"
+                android:scaleType="center" />
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab_listen"
+                android:layout_width="@dimen/fab_size_mini"
+                android:layout_height="@dimen/fab_size_mini"
+                android:layout_margin="20dp"
+                app:backgroundTint="@color/white"
+                app:elevation="10dp"
+                app:fabSize="normal"
+                app:layout_anchorGravity="bottom|right|end"
+                app:pressedTranslationZ="10dp"
+                app:rippleColor="#33728dff"
+                app:useCompatPadding="false"
+                android:src="@drawable/listen"
+                android:clickable="true"
+                android:scaleType="center"/>
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab_picture"
+                android:layout_width="@dimen/fab_size_mini"
+                android:layout_height="@dimen/fab_size_mini"
+                android:layout_margin="20dp"
+                app:backgroundTint="@color/white"
+                app:elevation="10dp"
+                app:fabSize="normal"
+                app:layout_anchorGravity="bottom|right|end"
+                app:pressedTranslationZ="10dp"
+                app:rippleColor="#33728dff"
+                app:useCompatPadding="false"
+                android:src="@drawable/picture"
+                android:clickable="true"
+                android:scaleType="center"/>
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab_record"
+                android:layout_width="@dimen/fab_size_mini"
+                android:layout_height="@dimen/fab_size_mini"
+                android:layout_margin="20dp"
+                app:backgroundTint="@color/white"
+                app:elevation="10dp"
+                app:fabSize="normal"
+                app:layout_anchorGravity="bottom|right|end"
+                app:pressedTranslationZ="10dp"
+                app:rippleColor="#33728dff"
+                app:useCompatPadding="false"
+                android:src="@drawable/record"
+                android:clickable="true"
+                android:scaleType="center"/>
+        </TableRow>
+    </TableLayout>
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:paddingLeft="50dp">-->
+
+        <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:src="@drawable/soil_moist"/>&ndash;&gt;-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:text="建议土壤湿度：40%-70%"/>-->
+    <!--</LinearLayout>-->
+</LinearLayout>

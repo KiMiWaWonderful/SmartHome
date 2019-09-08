@@ -1,0 +1,125 @@
+<resources>
+    <string name="app_name">SmartHomeVersionTwo</string>
+    <string name="link_name">连接</string>
+    <string name="link_out_name">断开</string>
+    <string name="to_data_name">数据</string>
+    <string name="to_action_name">操作</string>
+    <string name="action_name">Action</string>
+    <string name="data_name">Data</string>
+
+    <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="action_settings">Settings</string>
+    <string name="user_profile_photo">http://baobaoloveyou.com/flowingdrawer_icon.png</string>
+
+    <!--activity_main_two.xml-->
+    <string name="main_login">登录</string>
+    <string name="main_register">注册</string>
+
+    <!--activity_register.xml-->
+    <string name="register_edittext_username">请输入手机号/邮箱/用户名</string>
+    <string name="register_edittext_passwordone">请输入密码</string>
+    <string name="register_edittext_passwordtwo">请再次输入密码</string>
+    <string name="register_button_register">注册</string>
+
+    <!--activity_login.xml-->
+    <string name="login_edittext_username">请输入手机号/邮箱/用户名</string>
+    <string name="login_edittext_password">请输入登录密码</string>
+    <string name="login_button_login">登录</string>
+
+    <!--在家模式-->
+    <string name="huijia_moshi">在家模式</string>
+    <!--离家模式-->
+    <string name="lijia_moshi">离家模式</string>
+    <!--自动模式-->
+    <string name="zidong_moshi">自动模式</string>
+    <!--睡眠模式-->
+    <string name="shuimian_moshi">睡眠模式</string>
+    <!--开始说话-->
+    <string name="kaishi_shuohua">开始说话</string>
+    <!--制冷模式-->
+    <string name="cool_mode">制冷模式</string>
+    <!--送风模式-->
+    <string name="wind_mode">送风模式</string>
+    <!--除湿模式-->
+    <string name="moist_mode">除湿模式</string>
+    <!--制暖模式-->
+    <string name="warm_mode">制暖模式</string>
+    <!--增大模式-->
+    <string name="enlarge_mode">增大模式</string>
+
+    <!--情景模式-->
+    <string name="menu_title">情景模式</string>
+    <!--室内状况-->
+    <string name="data_title">室内状况</string>
+
+
+    <!--在家模式-->
+    <string name="icon_huijia">&#xe614;</string>
+    <!--离家模式-->
+    <string name="icon_lijia">&#xe613;</string>
+    <!--自动模式-->
+    <string name="icon_zidong">&#xe51b;</string>
+    <!--睡眠模式-->
+    <string name="icon_shuimian">&#xe631;</string>
+
+    <!--语音-->
+    <string name="icon_yuyin">&#xe645;</string>
+    <!--连接-->
+    <string name="icon_lianjie">&#xe659;</string>
+    <!--断开-->
+    <string name="icon_cut">&#xe699;</string>
+    <!--智能家居-->
+    <string name="icon_jia">&#xe7f0;</string>
+    <!--湿度-->
+    <string name="icon_humidity">&#xe6f7;</string>
+    <!--光强-->
+    <string name="icon_icon_">&#xe60d;</string>
+    <!--温度-->
+    <string name="icon_app_icons__">&#xe61d;</string>
+    <!--烟雾浓度-->
+    <string name="icon_jianzhuanquan">&#xe613;</string>
+    <!--天气-->
+    <string name="icon_shouye">&#xe635;</string>
+    <!--插座1-->
+    <string name="icon_chazuo">&#xe69d;</string>
+    <!--插座2-->
+    <string name="icon_tubiao_">&#xe601;</string>
+    <!--换气-->
+    <string name="icon_qiya">&#xe7fb;</string>
+    <!--加湿-->
+    <string name="icon_shuidi2">&#xe620;</string>
+    <!--当前模式-->
+    <string name="icon_moshi">&#xe61f;</string>
+    <!--换气-->
+    <string name="icon_qipao">&#xe684;</string>
+    <!--空调-->
+    <string name="icon_kongtiao">&#xe630;</string>
+    <!--重启-->
+    <string name="icon_iconrestart">&#xe611;</string>
+    <!--灯-->
+    <string name="icon_deng">&#xe66d;</string>
+    <!--门-->
+    <string name="icon_icon_test">&#xe645;</string>
+    <!--窗帘-->
+    <string name="icon_chuanglian">&#xe6a3;</string>
+    <!--提高温度-->
+    <string name="icon_jiantou_copy_copy">&#xe633;</string>
+    <!--降低温度-->
+    <string name="icon_jiantou">&#xe631;</string>
+    <!--舒适温度-->
+    <string name="icon_shushi">&#xe62e;</string>
+    <!--制冷模式-->
+    <string name="icon_zhileng">&#xe64b;</string>
+    <!--送风模式-->
+    <string name="icon_songfeng">&#xe648;</string>
+    <!--除湿模式-->
+    <string name="icon_hekriconchushi">&#xe602;</string>
+    <!--制暖模式-->
+    <string name="icon_nuanqi_">&#xe60f;</string>
+    <!--增大模式-->
+    <string name="icon_zengjia">&#xe889;</string>
+    <!--自动模式-->
+    <string name="icon_zidongbangding">&#xe666;</string>
+
+
+</resources>

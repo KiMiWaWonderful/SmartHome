@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<RelativeLayout-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--tools:context=".Activity.RegisterActivity"-->
+    <!--android:background="#eeeeee">-->
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/rl_registeractivity_top"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:background="@color/blue">-->
+        <!--<ImageView-->
+            <!--android:id="@+id/iv_registeractivity_back"-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:background="@drawable/ic_left_back"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:clickable="true" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_registeractivity_register"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="注册"-->
+            <!--android:textColor="#fff"-->
+            <!--android:textSize="20dp"-->
+            <!--android:layout_toRightOf="@+id/iv_registeractivity_back"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="20dp"/>-->
+    <!--</RelativeLayout>-->
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/ll_registeractivity_body"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_below="@+id/rl_registeractivity_top"-->
+        <!--android:layout_marginTop="120dp"-->
+        <!--android:layout_marginLeft="5dp"-->
+        <!--android:layout_marginRight="5dp"-->
+        <!--&gt;-->
+        <!--&lt;!&ndash; 第一个文本编辑框  输入用户名 &ndash;&gt;-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+            <!--<TextView-->
+                <!--android:id="@+id/tv_registeractivity_username"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="用户名："/>-->
+            <!--<EditText-->
+                <!--android:id="@+id/et_registeractivity_username"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:hint="请输入用户名"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--/>-->
+        <!--</LinearLayout>-->
+        <!--&lt;!&ndash; 第二个文本编辑框  输入密码 &ndash;&gt;-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+            <!--<TextView-->
+                <!--android:id="@+id/tv_registeractivity_password1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="密    码："/>-->
+            <!--<EditText-->
+                <!--android:id="@+id/et_registeractivity_password1"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:inputType="textPassword"-->
+                <!--android:hint="请输入密码" />-->
+        <!--</LinearLayout>-->
+        <!--&lt;!&ndash; 第三个文本编辑框  再次输入密码 &ndash;&gt;-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+            <!--<TextView-->
+                <!--android:id="@+id/tv_registeractivity_password2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="密    码："/>-->
+            <!--<EditText-->
+                <!--android:id="@+id/et_registeractivity_password2"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:hint="请再次输入密码"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:inputType="textPassword"-->
+                <!--/>-->
+        <!--</LinearLayout>-->
+        <!--&lt;!&ndash; 验证码部分 &ndash;&gt;-->
+        <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginRight="15dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginTop="10dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:orientation="horizontal" >&ndash;&gt;-->
+            <!--&lt;!&ndash;&lt;!&ndash; 第四个文本编辑框  输入验证码 &ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:orientation="horizontal">&ndash;&gt;-->
+                <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:id="@+id/tv_registeractivity_phoneCodes"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:text="验证码："/>&ndash;&gt;-->
+                <!--&lt;!&ndash;<EditText&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:id="@+id/et_registeractivity_phoneCodes"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_width="0dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_weight="3"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_height="50dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_marginLeft="10dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_marginRight="10dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:hint="请输入4位验证码" />&ndash;&gt;-->
+
+                <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:id="@+id/iv_registeractivity_showCode"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_width="0dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_height="70dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_weight="1.5"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:clickable="true"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_marginTop="-10dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;/>&ndash;&gt;-->
+            <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+        <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+        <!--&lt;!&ndash; 注册按钮 &ndash;&gt;-->
+        <!--<Button-->
+            <!--android:id="@+id/bt_registeractivity_register"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:background="@drawable/selector_loginactivity_button"-->
+            <!--android:textColor="#fff"-->
+            <!--android:text="注册"-->
+            <!--android:layout_marginTop="40dp"-->
+            <!--/>-->
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:id="@+id/rl_registeractivity_bottom"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--&gt;-->
+            <!--<TextView-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:text="注册即代表同意《用户协议》"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"/>-->
+        <!--</RelativeLayout>-->
+
+    <!--</LinearLayout>-->
+<!--</RelativeLayout>-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/registerpic">
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/rl_registeractivity_top"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="33dp"-->
+    <!--android:background="@null">-->
+    <!--<ImageView-->
+    <!--android:id="@+id/iv_registeractivity_back"-->
+    <!--android:layout_width="30dp"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:background="@drawable/arrow_back"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--android:clickable="true" />-->
+    <!--</RelativeLayout>-->
+
+    <EditText
+        android:gravity="center"
+        android:layout_marginTop="230dp"
+        android:id="@+id/et_registeractivity_username"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/register_edittext_username"
+        android:background="@drawable/rounded_edittext"
+        android:textSize="15sp"
+        />
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/et_registeractivity_password1"
+        android:gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/rounded_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/register_edittext_passwordone"
+        android:inputType="textPassword"
+        android:layout_below="@id/et_registeractivity_username"
+        android:textSize="15sp"/>
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/et_registeractivity_password2"
+        android:gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/rounded_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/register_edittext_passwordtwo"
+        android:inputType="textPassword"
+        android:layout_below="@id/et_registeractivity_password1"
+        android:textSize="15sp"/>
+
+    <Button
+        android:id="@+id/bt_registeractivity_register"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register_button_register"
+        android:layout_below="@id/et_registeractivity_password2"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/textPrimary"
+        android:background="@drawable/rounded_button"/>
+</RelativeLayout>

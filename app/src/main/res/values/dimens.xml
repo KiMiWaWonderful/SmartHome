@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fab_size_normal">70dp</dimen>
+    <dimen name="fab_size_mini">50dp</dimen>
+    <dimen name="activity_title_height">60dp</dimen>
+    <dimen name="activity_title_size">20sp</dimen>
+</resources>

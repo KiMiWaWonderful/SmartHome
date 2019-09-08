@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="primary">#8BC34A</color>
+    <color name="primaryDark">#689F38</color>
+    <color name="primaryLight">#DCEDC8</color>
+    <color name="accent">#FF4081</color>
+    <color name="textPrimary">#212121</color>
+    <color name="textSecondary">#727272</color>
+    <color name="divider">#B6B6B6</color>
+    <color name="white">#FFFFFF</color>
+    <color name="blue">#00BBFF</color>
+    <color name="grey">#DDDDDD</color>
+
+    <color name="lightYellow">#F7F8E0</color>
+    <color name="lightGreen">#ECF8E0</color>
+    <color name="lightBlue">#E0F8F7</color>
+
+    <color name="Azure">#F0FFFF</color>
+    <color name="WhiteSmoke">#F5F5F5</color>
+
+    <color name="LightGreen">#90EE90</color>
+    <color name="Silver">#C0C0C0</color>
+
+    <color name="color_minefragment_top">#20B2AA</color>
+
+    <color name="style_color_primary">#2d5d82</color>
+    <color name="style_color_primary_dark">#21425d</color>
+    <color name="style_color_accent">#01bcd5</color>
+    <color name="fab_color_pressed">#007787</color>
+</resources>

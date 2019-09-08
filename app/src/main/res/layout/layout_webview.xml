@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="600dp"
+    android:layout_height="300dp"
+    android:gravity="center">
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="600dp"
+        android:layout_height="300dp">
+    </WebView>
+
+    <FrameLayout
+        android:id="@+id/flVideoContainer"
+        android:layout_width="600dp"
+        android:layout_height="300dp">
+    </FrameLayout>
+
+</RelativeLayout>

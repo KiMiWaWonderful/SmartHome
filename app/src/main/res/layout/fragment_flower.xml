@@ -1,0 +1,735 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<ScrollView android:layout_height="match_parent"-->
+    <!--android:layout_width="match_parent"-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools">-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/xuanzejiemianba">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/linear_one"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_title_height"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <TextView
+            android:id="@+id/tv_activity_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.66"
+            android:gravity="center"
+            android:text="自动浇花"
+            android:textSize="@dimen/activity_title_size"/>
+    </LinearLayout>
+
+    <!--<TableLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="@color/grey">-->
+
+        <!--<TableRow>-->
+            <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:src="@drawable/huijiamoshiiiiiii"-->
+            <!--android:adjustViewBounds="true"-->
+            <!--android:maxHeight="260dp"-->
+            <!--android:maxWidth="600dp"/>-->
+            <!--&lt;!&ndash;<include layout="@layout/layout_webview" />&ndash;&gt;-->
+        <!--</TableRow>-->
+        <!--&lt;!&ndash;<TableRow>&ndash;&gt;-->
+        <!--&lt;!&ndash;&ndash;&gt;-->
+        <!--&lt;!&ndash;</TableRow>&ndash;&gt;-->
+        <!--&lt;!&ndash;<TableRow>&ndash;&gt;-->
+        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_weight="1" />&ndash;&gt;-->
+        <!--&lt;!&ndash;</TableRow>&ndash;&gt;-->
+    <!--</TableLayout>-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical"-->
+        <!--android:background="@color/white">-->
+        <!--<ImageView-->
+            <!--android:id="@+id/img_try"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:src="@drawable/huijiamoshiiiiiii"-->
+            <!--android:adjustViewBounds="true"-->
+            <!--android:maxHeight="260dp"-->
+            <!--android:maxWidth="600dp"/>-->
+
+        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_toRightOf="@+id/img_try"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="dangqianguangzhao"/>&ndash;&gt;-->
+        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_toRightOf="@+id/img_try"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="dangqianguangzhao"/>&ndash;&gt;-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout -->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--android:background="@drawable/xuanzejiemianba">-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="50dp"
+        android:paddingLeft="50dp">
+
+        <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:src="@drawable/soil" />-->
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+        android:text="当前土壤湿度："/>
+        <TextView
+            android:id="@+id/flower_txt_soil_moist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="50dp">
+
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/soil_moist"/>-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="建议土壤湿度：40%-70%"/>
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+       <!---->
+    <!--</LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="50dp"
+        android:paddingLeft="50dp">
+
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/sun"/>-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="当前光照："/>
+        <TextView
+            android:id="@+id/flower_txt_light_strength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="50dp">
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="dangqianguangzhao"/>-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="建议光照：400-2500"/>
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--android:background="@color/white">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text=""/>-->
+    <!--</LinearLayout>-->
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="50dp"
+        android:paddingLeft="50dp">
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="dangqianguangzhao"/>-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="当前温度："/>
+        <TextView
+            android:id="@+id/flower_txt_temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="67C"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="50dp">
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="dangqianguangzhao"/>-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="建议温度：18C-28C"/>
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--android:background="@color/white">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text=""/>-->
+    <!--</LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="50dp"
+        android:paddingLeft="50dp">
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="dangqianguangzhao"/>-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="当前空气湿度："/>
+        <TextView
+            android:id="@+id/flower_txt_air_moist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="89"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="50dp">
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="dangqianguangzhao"/>-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="建议空气湿度：45%-60%"/>
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--android:background="@color/white">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text=""/>-->
+    <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+    <!--<GridLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:rowCount="6"-->
+        <!--android:columnCount="3"-->
+        <!--android:layout_weight="15">-->
+
+        <!--<LinearLayout-->
+            <!--android:background="@color/white"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_rowWeight="1"-->
+            <!--android:layout_columnWeight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_margin="0.5dp">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/icon_iconrestart"-->
+                <!--android:id="@+id/txt_chongQi"/>-->
+            <!--<Button-->
+                <!--android:id="@+id/btn_restart"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="重启"-->
+                <!--android:background="@null"-->
+                <!--android:textColor="@color/blue"/>-->
+
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:background="@color/white"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_rowWeight="1"-->
+            <!--android:layout_columnWeight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_margin="0.5dp">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/icon_qipao"-->
+                <!--android:id="@+id/txt_huanQiEr"/>-->
+            <!--<Button-->
+                <!--android:id="@+id/btn_aeration"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="换气"-->
+                <!--android:background="@null"-->
+                <!--android:textColor="@color/blue"/>-->
+
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:background="@color/white"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_rowWeight="1"-->
+            <!--android:layout_columnWeight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_margin="0.5dp">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/icon_deng"-->
+                <!--android:id="@+id/txt_deng"/>-->
+            <!--<Button-->
+                <!--android:id="@+id/btn_light"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="灯"-->
+                <!--android:background="@null"-->
+                <!--android:textColor="@color/blue"/>-->
+
+        <!--</LinearLayout>-->
+
+
+        <!--<LinearLayout-->
+            <!--android:background="@color/white"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_rowWeight="1"-->
+            <!--android:layout_columnWeight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_margin="0.5dp">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/icon_chazuo"-->
+                <!--android:id="@+id/txt_chaZuoYiEr"/>-->
+            <!--<Button-->
+                <!--android:id="@+id/btn_socket1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="插座1"-->
+                <!--android:background="@null"-->
+                <!--android:textColor="@color/blue"/>-->
+
+        <!--</LinearLayout>-->
+
+
+        <!--<LinearLayout-->
+            <!--android:background="@color/white"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_rowWeight="1"-->
+            <!--android:layout_columnWeight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_margin="0.5dp">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/icon_icon_test"-->
+                <!--android:id="@+id/txt_men"/>-->
+            <!--<Button-->
+                <!--android:id="@+id/btn_door"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="门"-->
+                <!--android:background="@null"-->
+                <!--android:textColor="@color/blue"/>-->
+
+        <!--</LinearLayout>-->
+
+
+        <!--<LinearLayout-->
+            <!--android:background="@color/white"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_rowWeight="1"-->
+            <!--android:layout_columnWeight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_margin="0.5dp">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/icon_shuidi2"-->
+                <!--android:id="@+id/txt_jiaShiEr"/>-->
+            <!--<Button-->
+                <!--android:id="@+id/btn_humidification"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="加湿"-->
+                <!--android:background="@null"-->
+                <!--android:textColor="@color/blue"/>-->
+
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:background="@color/white"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_rowWeight="1"-->
+            <!--android:layout_columnWeight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_margin="0.5dp">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/icon_tubiao_"-->
+                <!--android:id="@+id/txt_chaZuoErEr"/>-->
+            <!--<Button-->
+                <!--android:id="@+id/btn_socket2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="插座2"-->
+                <!--android:background="@null"-->
+                <!--android:textColor="@color/blue"/>-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:background="@color/white"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_rowWeight="1"-->
+            <!--android:layout_columnWeight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_margin="0.5dp">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/icon_chuanglian"-->
+                <!--android:id="@+id/txt_chuangLian"/>-->
+            <!--<Button-->
+                <!--android:id="@+id/btn_curtain"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="窗帘"-->
+                <!--android:background="@null"-->
+                <!--android:textColor="@color/blue"/>-->
+
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:background="@color/white"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_rowWeight="1"-->
+            <!--android:layout_columnWeight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_margin="0.5dp">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/icon_kongtiao"-->
+                <!--android:id="@+id/txt_kongTiao"/>-->
+            <!--<Button-->
+                <!--android:id="@+id/btn_airCondition"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="空调"-->
+                <!--android:background="@null"-->
+                <!--android:textColor="@color/blue"/>-->
+
+        <!--</LinearLayout>-->
+
+
+        <!--<LinearLayout-->
+            <!--android:background="@color/white"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_rowWeight="1"-->
+            <!--android:layout_columnWeight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_margin="0.5dp">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/icon_jiantou_copy_copy"-->
+                <!--android:id="@+id/txt_tiGaoWenDu"/>-->
+            <!--<Button-->
+                <!--android:id="@+id/btn_turnUpTemperature"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="提高温度"-->
+                <!--android:background="@null"-->
+                <!--android:textColor="@color/blue"/>-->
+
+        <!--</LinearLayout>-->
+
+
+        <!--<LinearLayout-->
+            <!--android:background="@color/white"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_rowWeight="1"-->
+            <!--android:layout_columnWeight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_margin="0.5dp">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/icon_jiantou"-->
+                <!--android:id="@+id/txt_jiangDiWenDu"/>-->
+            <!--<Button-->
+                <!--android:id="@+id/btn_turnDownTemperature"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="降低温度"-->
+                <!--android:background="@null"-->
+                <!--android:textColor="@color/blue"/>-->
+
+        <!--</LinearLayout>-->
+
+
+        <!--<LinearLayout-->
+            <!--android:background="@color/white"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_rowWeight="1"-->
+            <!--android:layout_columnWeight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_margin="0.5dp">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/icon_shushi"-->
+                <!--android:id="@+id/txt_shuShiWenDu"/>-->
+            <!--<Button-->
+                <!--android:id="@+id/btn_comfortTemperature"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="舒适温度"-->
+                <!--android:background="@null"-->
+                <!--android:textColor="@color/blue"/>-->
+
+        <!--</LinearLayout>-->
+
+
+        <!--<LinearLayout-->
+            <!--android:background="@color/white"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_rowWeight="1"-->
+            <!--android:layout_columnWeight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_margin="0.5dp">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/icon_zhileng"-->
+                <!--android:id="@+id/txt_zhiLengMoShi"/>-->
+            <!--<Button-->
+                <!--android:id="@+id/btn_coolMode"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="制冷模式"-->
+                <!--android:background="@null"-->
+                <!--android:textColor="@color/blue"/>-->
+        <!--</LinearLayout>-->
+
+
+        <!--<LinearLayout-->
+            <!--android:background="@color/white"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_rowWeight="1"-->
+            <!--android:layout_columnWeight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_margin="0.5dp">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/icon_songfeng"-->
+                <!--android:id="@+id/txt_songFengMoShi"/>-->
+            <!--<Button-->
+                <!--android:id="@+id/btn_windMode"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="送风模式"-->
+                <!--android:background="@null"-->
+                <!--android:textColor="@color/blue"/>-->
+        <!--</LinearLayout>-->
+
+
+        <!--<LinearLayout-->
+            <!--android:background="@color/white"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_rowWeight="1"-->
+            <!--android:layout_columnWeight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_margin="0.5dp">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/icon_hekriconchushi"-->
+                <!--android:id="@+id/txt_chuShiMoShi"/>-->
+            <!--<Button-->
+                <!--android:id="@+id/btn_moistMode"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="除湿模式"-->
+                <!--android:background="@null"-->
+                <!--android:textColor="@color/blue"/>-->
+        <!--</LinearLayout>-->
+
+
+        <!--<LinearLayout-->
+            <!--android:background="@color/white"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_rowWeight="1"-->
+            <!--android:layout_columnWeight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_margin="0.5dp">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/icon_nuanqi_"-->
+                <!--android:id="@+id/txt_zhiNuanMoShi"/>-->
+            <!--<Button-->
+                <!--android:id="@+id/btn_warmMode"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="制暖模式"-->
+                <!--android:background="@null"-->
+                <!--android:textColor="@color/blue"/>-->
+        <!--</LinearLayout>-->
+
+
+        <!--<LinearLayout-->
+            <!--android:background="@color/white"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_rowWeight="1"-->
+            <!--android:layout_columnWeight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_margin="0.5dp">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/icon_zidongbangding"-->
+                <!--android:id="@+id/txt_ziDongMoShi"/>-->
+            <!--<Button-->
+                <!--android:id="@+id/btn_autoMode"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="自动模式"-->
+                <!--android:background="@null"-->
+                <!--android:textColor="@color/blue"/>-->
+        <!--</LinearLayout>-->
+
+
+        <!--<LinearLayout-->
+            <!--android:background="@color/white"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_rowWeight="1"-->
+            <!--android:layout_columnWeight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_margin="0.5dp">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/icon_zengjia"-->
+                <!--android:id="@+id/txt_zengDaMoShi"/>-->
+            <!--<Button-->
+                <!--android:id="@+id/btn_strengthMode"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="增大模式"-->
+                <!--android:background="@null"-->
+                <!--android:textColor="@color/blue"/>-->
+        <!--</LinearLayout>-->
+
+
+
+
+    <!--</GridLayout>-->
+</LinearLayout>
+<!--</ScrollView>-->

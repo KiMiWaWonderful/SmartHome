@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:background="@drawable/background"
+    android:orientation="horizontal">
+
+    <!--<Button-->
+        <!--android:id="@+id/alert_dialog_btn_socket1"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+        <!--android:text="插座1"/>-->
+
+    <Button
+        android:background="@drawable/roundbutton"
+        android:layout_margin="10dp"
+        android:id="@+id/dialog_btn_socket1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingBottom="10dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="10dp"
+        android:text="插座1"
+         />
+
+    <!--<Button-->
+        <!--android:id="@+id/dialog_btn_socket2"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="插座2"/>-->
+    <Button
+        android:background="@drawable/roundbutton"
+        android:layout_margin="10dp"
+        android:id="@+id/dialog_btn_socket2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingBottom="10dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="10dp"
+        android:text="插座2" />
+
+</LinearLayout>

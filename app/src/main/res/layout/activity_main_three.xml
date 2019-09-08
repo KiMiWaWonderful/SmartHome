@@ -1,0 +1,93 @@
+<com.mxn.soul.flowingdrawer_core.FlowingDrawer
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    app:edPosition="1"
+    app:edMenuSize="260dp"
+    app:edMenuBackground="#dddddd">
+
+    <!--content-->
+    <!--<androidx.coordinatorlayout.widget.CoordinatorLayout-->
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/home_container"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"   >
+        </FrameLayout>
+        <!--<View android:layout_width="match_parent"-->
+            <!--android:layout_height="0.5dp"-->
+            <!--android:alpha="0.6"-->
+            <!--android:background="@android:color/darker_gray"      />-->
+        <!--<android.support.v7.widget.RecyclerView-->
+            <!--android:id="@+id/rvFeed"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:scrollbars="none"-->
+            <!--app:layout_behavior="@string/appbar_scrolling_view_behavior"/>-->
+        <!--<android.support.design.widget.AppBarLayout-->
+            <!--android:id="@+id/appBarLayout"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"/>-->
+        <!--<include layout="@layout/fragment_action"></include>-->
+
+        <!--<view-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:id="@+id/select_view"></view>-->
+    </android.support.design.widget.CoordinatorLayout>
+            <!--<include-->
+                <!--android:id="@+id/toolbar"-->
+                <!--layout="@layout/view_feed_toolbar"/>-->
+        <!--</android.support.design.widget.AppBarLayout>-->
+
+
+
+    <!--menu-->
+    <com.mxn.soul.flowingdrawer_core.FlowingMenuLayout
+        android:id="@+id/menulayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/id_container_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/fragment_menu"></include>
+            <!--<com.google.android.material.navigation.NavigationView-->
+                <!--android:id="@+id/nav_view"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_gravity="start"-->
+                <!--android:background="@android:color/transparent"-->
+                <!--app:headerLayout="@layout/view_global_menu_header"-->
+                <!--app:itemIconTint="#8b8b8b"-->
+                <!--app:itemTextColor="#666666"-->
+                <!--app:menu="@menu/drawer_menu" />-->
+        </FrameLayout>
+
+
+        <!--<android.support.design.widget.NavigationView-->
+            <!--android:id="@+id/vNavigation"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_gravity="start"-->
+            <!--android:background="@android:color/transparent"-->
+            <!--app:headerLayout="@layout/view_global_menu_header"-->
+            <!--app:itemIconTint="#8b8b8b"-->
+            <!--app:itemTextColor="#666666"-->
+            <!--app:menu="@menu/drawer_menu"/>-->
+
+    </com.mxn.soul.flowingdrawer_core.FlowingMenuLayout>
+
+</com.mxn.soul.flowingdrawer_core.FlowingDrawer>

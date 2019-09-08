@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--android:id="@+id/id_menu" >-->
+
+    <item
+
+        android:id="@+id/tab_menu_action"
+        android:title="操作"
+        android:icon="@drawable/operate"/>
+
+    <item
+        android:id="@+id/tab_menu_data"
+        android:title="数据"
+        android:icon="@drawable/shujux"/>
+
+    <item
+        android:id="@+id/tab_menu_settings"
+        android:title="设置"
+        android:icon="@drawable/tubiaozhizuomoban"/>
+
+    <!--<item-->
+        <!--android:id="@+id/tab_menu_sleep"-->
+        <!--android:title="睡眠"-->
+        <!--android:icon="@drawable/leafs_24px"/>-->
+
+    <!--<item-->
+
+        <!--android:id="@+id/tab_menu_profile"-->
+        <!--android:title="我的"-->
+
+        <!--/>-->
+
+</menu>

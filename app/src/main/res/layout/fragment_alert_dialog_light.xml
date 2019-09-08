@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="20dp"
+    android:layout_weight="1"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@drawable/background">-->
+        <!--<Button-->
+            <!--android:background="@drawable/roundbutton"-->
+            <!--android:layout_margin="10dp"-->
+            <!--android:id="@+id/dialog_btn_light1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:paddingBottom="10dp"-->
+            <!--android:paddingLeft="16dp"-->
+            <!--android:paddingRight="16dp"-->
+            <!--android:paddingTop="10dp"-->
+            <!--android:text="灯1"-->
+             <!--/>-->
+
+    <!--<Button-->
+        <!--android:background="@drawable/roundbutton"-->
+            <!--android:layout_margin="10dp"-->
+            <!--android:id="@+id/dialog_btn_light2"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:paddingBottom="10dp"-->
+            <!--android:paddingLeft="16dp"-->
+            <!--android:paddingRight="16dp"-->
+            <!--android:paddingTop="10dp"-->
+            <!--android:text="灯2"-->
+        <!--/>-->
+
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="灯1"/>
+
+        <SeekBar
+            android:paddingTop="10dp"
+            android:id="@+id/sb_light_one"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:paddingLeft="12dp"
+            android:paddingTop="5dp"
+            android:id="@+id/txt_light_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="灯2"/>
+
+        <SeekBar
+            android:paddingTop="10dp"
+            android:id="@+id/sb_light_two"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:paddingLeft="12dp"
+            android:paddingTop="5dp"
+            android:id="@+id/txt_light_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"/>
+    </LinearLayout>
+    </LinearLayout>
+
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" -->
+        <!--/>-->
+
+
+
+<!--</LinearLayout>-->

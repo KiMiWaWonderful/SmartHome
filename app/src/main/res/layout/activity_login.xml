@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<RelativeLayout-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="#eeeeee"-->
+    <!--tools:context=".Activity.LoginActivity">-->
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/rl_loginactivity_top"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:background="@color/blue" >-->
+        <!--<ImageView-->
+            <!--android:id="@+id/iv_loginactivity_back"-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:background="@drawable/ic_left_back"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:clickable="true" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_loginactivity_login"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="登录"-->
+            <!--android:textColor="#fff"-->
+            <!--android:textSize="20dp"-->
+            <!--android:layout_toRightOf="@+id/iv_loginactivity_back"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="20dp" />-->
+        <!--<TextView-->
+            <!--android:id="@+id/tv_loginactivity_register"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="注册"-->
+            <!--android:textColor="#fff"-->
+            <!--android:textSize="20dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginRight="30dp"-->
+            <!--android:clickable="true" />-->
+    <!--</RelativeLayout>-->
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/ll_loginactivity_two"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_below="@+id/rl_loginactivity_top"-->
+        <!--android:layout_marginTop="200dp"-->
+        <!--android:layout_marginLeft="5dp"-->
+        <!--android:layout_marginRight="5dp"-->
+        <!--android:layout_gravity="center">-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+            <!--<TextView-->
+                <!--android:id="@+id/tv_loginactivity_username"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="用户名："-->
+                <!--android:textColor="@color/blue" />-->
+            <!--<EditText-->
+                <!--android:id="@+id/et_loginactivity_username"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:hint="手机号/邮箱/用户名"-->
+                <!--android:padding="5dp"-->
+                <!--android:layout_marginLeft="1dp"-->
+                <!--android:layout_marginRight="1dp" />-->
+        <!--</LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+            <!--<TextView-->
+                <!--android:id="@+id/tv_loginactivity_password"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="密码："-->
+                <!--android:textColor="@color/blue"/>-->
+            <!--<EditText-->
+                <!--android:id="@+id/et_loginactivity_password"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:hint="登录密码"-->
+                <!--android:inputType="textPassword"-->
+                <!--android:padding="5dp"-->
+                <!--android:layout_marginLeft="1dp"-->
+                <!--android:layout_marginRight="1dp" />-->
+        <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+
+    <!--<Button-->
+        <!--android:id="@+id/bt_loginactivity_login"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/ll_loginactivity_two"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:layout_marginLeft="5dp"-->
+        <!--android:layout_marginRight="5dp"-->
+        <!--android:background="@drawable/selector_loginactivity_button"-->
+        <!--android:text="登录"-->
+        <!--android:textColor="#fff"-->
+        <!--android:gravity="center" />-->
+<!--</RelativeLayout>-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginpictwo">
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/rl_loginactivity_top"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="35dp"-->
+    <!--android:background="@null" >-->
+    <!--<ImageView-->
+    <!--android:id="@+id/iv_loginactivity_back"-->
+    <!--android:layout_width="30dp"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:background="@drawable/arrow_back"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--android:clickable="true" />-->
+    <!--</RelativeLayout>-->
+
+    <EditText
+        android:gravity="center"
+        android:layout_marginTop="280dp"
+        android:id="@+id/et_loginactivity_username"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/login_edittext_username"
+        android:background="@drawable/rounded_edittext"
+        android:textSize="15sp"
+        />
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/et_loginactivity_password"
+        android:gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/rounded_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/login_edittext_password"
+        android:inputType="textPassword"
+        android:layout_below="@id/et_loginactivity_username"
+        android:textSize="15sp"/>
+
+    <Button
+        android:id="@+id/bt_loginactivity_login"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_button_login"
+        android:textColor="@color/textPrimary"
+        android:layout_below="@id/et_loginactivity_password"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_button"/>
+
+    <!--<Button-->
+    <!--android:id="@+id/btn_forget_pass"-->
+    <!--android:layout_marginTop="20dp"-->
+    <!--android:textSize="20sp"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="@string/forget_pass"-->
+    <!--android:background="#0e000000"-->
+    <!--android:layout_below="@id/btn_login"-->
+    <!--android:layout_centerHorizontal="true"-->
+
+    <!--/>-->
+</RelativeLayout>

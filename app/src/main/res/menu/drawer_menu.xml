@@ -1,0 +1,37 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/menu_group_1">
+        <item
+            android:id="@+id/menu_action"
+            android:icon="@drawable/ic_global_menu_feed"
+            android:title="操作" />
+        <item
+            android:id="@+id/menu_mode"
+            android:icon="@drawable/ic_global_menu_news"
+            android:title="情景模式" />
+        <item
+            android:id="@+id/menu_data"
+            android:icon="@drawable/ic_global_menu_direct"
+            android:title="数据" />
+        <item
+            android:id="@+id/menu_flower"
+            android:icon="@drawable/flower"
+            android:title="自动浇花" />
+        <item
+            android:id="@+id/menu_safe"
+            android:icon="@drawable/ic_global_menu_popular"
+            android:title="监控" />
+
+        <!--<item-->
+            <!--android:id="@+id/menu_photo_you_liked"-->
+            <!--android:icon="@drawable/ic_global_menu_likes"-->
+            <!--android:title="Photos You've Liked" />-->
+    </group>
+    <group android:id="@+id/menu_group_2">
+        <item
+            android:id="@+id/menu_settings"
+            android:title="设置" />
+        <item
+            android:id="@+id/menu_about"
+            android:title="关于" />
+    </group>
+</menu>

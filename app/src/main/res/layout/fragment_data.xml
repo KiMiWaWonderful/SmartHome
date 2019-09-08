@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/huijiamoshiiiiii"
+                    android:adjustViewBounds="true"
+                    android:maxHeight="260dp"
+                    android:maxWidth="600dp"/>
+
+                <!--<include layout="@layout/layout_webview" />-->
+            </TableRow>
+            <!--&lt;!&ndash;<TableRow>&ndash;&gt;-->
+               <!--&lt;!&ndash;&ndash;&gt;-->
+            <!--&lt;!&ndash;</TableRow>&ndash;&gt;-->
+            <!--&lt;!&ndash;<TableRow>&ndash;&gt;-->
+                <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_weight="1" />&ndash;&gt;-->
+            <!--&lt;!&ndash;</TableRow>&ndash;&gt;-->
+        </TableLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+            <!--<Switch-->
+                <!--android:id="@+id/switch_data"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:thumb="@drawable/switch_custom_thumb_selector"-->
+                <!--android:track="@drawable/switch_custom_track_selector"-->
+                <!--android:switchMinWidth="60dp"-->
+                <!--android:layout_gravity="right|center_vertical"-->
+                <!--android:layout_marginLeft="10.0dip"-->
+                <!--android:paddingRight="7.0dip"/>-->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="开启离家模式"-->
+                <!--android:textSize="25px"-->
+                <!--android:layout_gravity="right|center_vertical"-->
+                <!--android:typeface="monospace"-->
+                <!--android:layout_marginLeft="10.0dip"-->
+                <!--android:paddingRight="11.0dip"/>-->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1" />-->
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left">
+
+            <TableRow
+                android:paddingLeft="50dp">
+                <TextView
+                    android:layout_margin="10dp"
+                    android:id="@+id/txt_wenDu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/icon_app_icons__"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="60dp"
+                    android:text="温度:"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    />
+
+                <!--<EditText-->
+                    <!--android:id="@+id/txt_temperature"-->
+                    <!--android:layout_width="220dp"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--android:inputType="text"-->
+                    <!--android:padding="5dp"-->
+                    <!--android:layout_marginLeft="1dp"-->
+                    <!--android:layout_marginRight="1dp"-->
+                    <!--android:background="@drawable/rounded_outer"-->
+                    <!--android:text="28C"/>-->
+                <TextView
+                    android:id="@+id/txt_temperature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="28C"
+                    android:paddingLeft="10dp"
+                    android:textSize="18sp"/>
+            </TableRow>
+
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left">
+
+            <TableRow
+                android:paddingLeft="50dp">
+                <TextView
+                    android:layout_margin="10dp"
+                    android:id="@+id/txt_guangQiang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/icon_icon_"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="60dp"
+                    android:text="光照强度:" />
+
+                <!--<EditText-->
+                    <!--android:id="@+id/txt_light_strength"-->
+                    <!--android:layout_width="220dp"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--android:inputType="text"-->
+                    <!--android:padding="5dp"-->
+                    <!--android:layout_marginLeft="1dp"-->
+                    <!--android:layout_marginRight="1dp"-->
+                    <!--android:background="@drawable/rounded_outer"-->
+                    <!--android:text="00028lx"/>-->
+                <TextView
+                    android:id="@+id/txt_light_strength"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00028lx"
+                    android:paddingLeft="10dp"
+                    android:textSize="18sp"/>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left">
+
+            <TableRow
+                android:paddingLeft="50dp">
+                <TextView
+                    android:layout_margin="10dp"
+                    android:id="@+id/txt_shiDu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/icon_humidity"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="60dp"
+                    android:text="湿度:"
+                    android:textColor="@color/colorPrimary" />
+
+                <!--<EditText-->
+                    <!--android:id="@+id/txt_humidity"-->
+                    <!--android:layout_width="220dp"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--android:inputType="text"-->
+                    <!--android:padding="5dp"-->
+                    <!--android:layout_marginLeft="1dp"-->
+                    <!--android:layout_marginRight="1dp"-->
+                    <!--android:background="@drawable/rounded_outer"-->
+                    <!--android:text="61P"/>-->
+                <TextView
+                    android:id="@+id/txt_humidity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="61P"
+                    android:paddingLeft="10dp"
+                    android:textSize="18sp"/>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left">
+
+            <TableRow
+                android:paddingLeft="50dp">
+                <TextView
+                    android:layout_margin="10dp"
+                    android:id="@+id/txt_yanWuNongDu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/icon_jianzhuanquan"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="60dp"
+                    android:text="烟雾浓度:" />
+
+                <!--<EditText-->
+                    <!--android:id="@+id/txt_somke_scope"-->
+                    <!--android:layout_width="220dp"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--android:inputType="text"-->
+                    <!--android:padding="5dp"-->
+                    <!--android:layout_marginLeft="1dp"-->
+                    <!--android:layout_marginRight="1dp"-->
+                    <!--android:background="@drawable/rounded_outer"-->
+                    <!--android:text="13ppm"/>-->
+                <TextView
+                    android:id="@+id/txt_somke_scope"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="13ppm"
+                    android:paddingLeft="10dp"
+                    android:textSize="18sp"/>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left">
+
+            <TableRow
+                android:paddingLeft="50dp">
+                <TextView
+                    android:layout_margin="10dp"
+                    android:id="@+id/txt_tianQi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/icon_shouye"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="60dp"
+                    android:text="天气:"
+                    android:textColor="@color/colorPrimary" />
+
+                <!--<EditText-->
+                    <!--android:id="@+id/txt_weather"-->
+                    <!--android:layout_width="220dp"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--android:inputType="text"-->
+                    <!--android:padding="5dp"-->
+                    <!--android:layout_marginLeft="1dp"-->
+                    <!--android:layout_marginRight="1dp"-->
+                    <!--android:background="@drawable/rounded_outer"-->
+                    <!--android:text="SUNNY"/>-->
+                <TextView
+                    android:id="@+id/txt_weather"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SUNNY"
+                    android:paddingLeft="10dp"
+                    android:textSize="18sp"/>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left">
+
+            <TableRow
+                android:paddingLeft="50dp">
+                <TextView
+                    android:layout_margin="10dp"
+                    android:id="@+id/txt_chaZuoYi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/icon_chazuo"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="60dp"
+                    android:text="智能插座1:" />
+
+                <!--<EditText-->
+                    <!--android:id="@+id/txt_smart_socket1"-->
+                    <!--android:layout_width="220dp"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--android:inputType="text"-->
+                    <!--android:padding="5dp"-->
+                    <!--android:layout_marginLeft="1dp"-->
+                    <!--android:layout_marginRight="1dp"-->
+                    <!--android:background="@drawable/rounded_outer"-->
+                    <!--android:text="ON"/>-->
+                <TextView
+                    android:id="@+id/txt_smart_socket1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ON"
+                    android:paddingLeft="10dp"
+                    android:textSize="18sp"/>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left">
+
+            <TableRow
+                android:paddingLeft="50dp">
+                <TextView
+                    android:layout_margin="10dp"
+                    android:id="@+id/txt_huanQi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/icon_qiya"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="60dp"
+                    android:text="换气:"
+                    android:textColor="@color/colorPrimary" />
+
+                <!--<EditText-->
+                    <!--android:id="@+id/txt_aeration"-->
+                    <!--android:layout_width="220dp"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--android:inputType="text"-->
+                    <!--android:padding="5dp"-->
+                    <!--android:layout_marginLeft="1dp"-->
+                    <!--android:layout_marginRight="1dp"-->
+                    <!--android:background="@drawable/rounded_outer"-->
+                    <!--android:text="ON"/>-->
+                <TextView
+                    android:id="@+id/txt_aeration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ON"
+                    android:paddingLeft="10dp"
+                    android:textSize="18sp"/>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left">
+
+            <TableRow
+                android:paddingLeft="50dp">
+                <TextView
+                    android:layout_margin="10dp"
+                    android:id="@+id/txt_chaZuoEr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/icon_tubiao_"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="60dp"
+                    android:text="智能插座2:" />
+
+                <!--<EditText-->
+                    <!--android:id="@+id/txt_smart_socket2"-->
+                    <!--android:layout_width="220dp"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--android:inputType="text"-->
+                    <!--android:padding="5dp"-->
+                    <!--android:layout_marginLeft="1dp"-->
+                    <!--android:layout_marginRight="1dp"-->
+                    <!--android:background="@drawable/rounded_outer"-->
+                    <!--android:text="ON"/>-->
+                <TextView
+                    android:id="@+id/txt_smart_socket2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ON"
+                    android:paddingLeft="10dp"
+                    android:textSize="18sp"/>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left">
+
+            <TableRow
+                android:paddingLeft="50dp">
+                <TextView
+                    android:layout_margin="10dp"
+                    android:id="@+id/txt_jiaShi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/icon_shuidi2"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="60dp"
+                    android:text="加湿:"
+                    android:textColor="@color/colorPrimary" />
+
+                <!--<EditText-->
+                    <!--android:id="@+id/txt_humidification"-->
+                    <!--android:layout_width="220dp"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--android:inputType="text"-->
+                    <!--android:padding="5dp"-->
+                    <!--android:layout_marginLeft="1dp"-->
+                    <!--android:layout_marginRight="1dp"-->
+                    <!--android:background="@drawable/rounded_outer"-->
+                    <!--android:text="ON"/>-->
+                <TextView
+                    android:id="@+id/txt_humidification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ON"
+                    android:paddingLeft="10dp"
+                    android:textSize="18sp"/>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left">
+
+            <TableRow
+                android:paddingLeft="50dp">
+                <TextView
+                    android:layout_margin="10dp"
+                    android:id="@+id/txt_moShi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/icon_moshi"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="60dp"
+                    android:text="当前模式:" />
+
+                <!--<EditText-->
+                    <!--android:id="@+id/txt_present_mode"-->
+                    <!--android:layout_width="220dp"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--android:inputType="text"-->
+                    <!--android:padding="5dp"-->
+                    <!--android:layout_marginLeft="1dp"-->
+                    <!--android:layout_marginRight="1dp"-->
+                    <!--android:background="@drawable/rounded_outer"-->
+                    <!--android:text="AUTO"/>-->
+                <TextView
+                    android:id="@+id/txt_present_mode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AUTO"
+                    android:paddingLeft="10dp"
+                    android:textSize="18sp"/>
+            </TableRow>
+        </TableLayout>
+
+
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:text="@string/data_name"-->
+        <!--android:textSize="24sp"-->
+        <!--android:textStyle="bold" />-->
+
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--
+
+            -->
+
+        <!--<TextView-->
+        <!--android:layout_width="40dp"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:text="温度:"-->
+        <!--android:textAllCaps="false"-->
+        <!--android:textColor="@color/colorPrimary" />-->
+
+        <!--<EditText-->
+        <!--android:id="@+id/txt_temperature"-->
+        <!--android:layout_width="120dp"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:inputType="text" />-->
+
+        <!--<TextView-->
+        <!--android:layout_width="40dp"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:text="光照强度:" />-->
+
+        <!--<EditText-->
+        <!--android:id="@+id/txt_light_strength"-->
+        <!--android:layout_width="120dp"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:inputType="text" />-->
+
+
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<TextView-->
+        <!--android:layout_width="40dp"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:text="湿度:"-->
+        <!--android:textColor="@color/colorPrimary" />-->
+
+        <!--<EditText-->
+        <!--android:id="@+id/txt_humidity"-->
+        <!--android:layout_width="120dp"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:inputType="text" />-->
+
+        <!--<TextView-->
+        <!--android:layout_width="40dp"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:text="烟雾浓度:" />-->
+
+        <!--<EditText-->
+        <!--android:id="@+id/txt_somke_scope"-->
+        <!--android:layout_width="120dp"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:inputType="text" />-->
+
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<TextView-->
+        <!--android:layout_width="40dp"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:text="天气:"-->
+        <!--android:textColor="@color/colorPrimary" />-->
+
+        <!--<EditText-->
+        <!--android:id="@+id/txt_weather"-->
+        <!--android:layout_width="120dp"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:inputType="text" />-->
+
+        <!--<TextView-->
+        <!--android:layout_width="40dp"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:text="智能插座1:" />-->
+
+        <!--<EditText-->
+        <!--android:id="@+id/txt_smart_socket1"-->
+        <!--android:layout_width="120dp"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:inputType="text" />-->
+
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<TextView-->
+        <!--android:layout_width="40dp"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:text="换气:"-->
+        <!--android:textColor="@color/colorPrimary" />-->
+
+        <!--<EditText-->
+        <!--android:id="@+id/txt_aeration"-->
+        <!--android:layout_width="120dp"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:inputType="text" />-->
+
+        <!--<TextView-->
+        <!--android:layout_width="40dp"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:text="智能插座2:" />-->
+
+        <!--<EditText-->
+        <!--android:id="@+id/txt_smart_socket2"-->
+        <!--android:layout_width="120dp"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:inputType="text" />-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<TextView-->
+        <!--android:layout_width="40dp"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:text="加湿:"-->
+        <!--android:textColor="@color/colorPrimary" />-->
+
+        <!--<EditText-->
+        <!--android:id="@+id/txt_humidification"-->
+        <!--android:layout_width="120dp"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:inputType="text" />-->
+
+        <!--<TextView-->
+        <!--android:layout_width="40dp"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:text="当前模式:" />-->
+
+        <!--<EditText-->
+        <!--android:id="@+id/txt_present_mode"-->
+        <!--android:layout_width="120dp"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:inputType="text" />-->
+        <!--</LinearLayout>-->
+
+
+    </LinearLayout>
+</ScrollView>

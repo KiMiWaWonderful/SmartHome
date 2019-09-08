@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+android:layout_width="match_parent"
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal|center_vertical"
+    android:orientation="vertical"
+    android:id="@+id/action_linearLayout"
+    android:background="@color/grey">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey">
+
+        <TableRow>
+            <!--<ImageView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:src="@drawable/huijiamoshiiiiiii"-->
+                <!--android:adjustViewBounds="true"-->
+                <!--android:maxHeight="260dp"-->
+                <!--android :maxWidth="600dp"/>-->
+            <include layout="@layout/layout_webview" />
+        </TableRow>
+        <!--<TableRow>-->
+            <!---->
+        <!--</TableRow>-->
+        <!--<TableRow>-->
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1" />-->
+        <!--</TableRow>-->
+    </TableLayout>
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical"-->
+        <!--android:background="@color/white">-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1" />-->
+        <!--<Switch-->
+            <!--android:id="@+id/switch_action"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:thumb="@drawable/switch_custom_thumb_selector"-->
+            <!--android:track="@drawable/switch_custom_track_selector"-->
+            <!--android:switchMinWidth="60dp"-->
+            <!--android:layout_gravity="right|center_vertical"-->
+            <!--android:layout_marginLeft="10.0dip"-->
+            <!--android:paddingRight="7.0dip"/>-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="开启回家模式"-->
+            <!--android:textSize="25px"-->
+            <!--android:layout_gravity="right|center_vertical"-->
+            <!--android:typeface="monospace"-->
+            <!--android:layout_marginLeft="10.0dip"-->
+            <!--android:paddingRight="11.0dip"/>-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1" />-->
+    <!--</LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/white">
+        <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"></LinearLayout>-->
+        <TextView
+            android:layout_width="80px"
+            android:layout_height="wrap_content"
+            android:text="@string/icon_huijia"
+            android:id="@+id/txt_back_mode"
+            android:layout_weight="1.0"/>
+        <Button
+            android:id="@+id/btn_back_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/huijia_moshi"
+            android:layout_weight="1.0"
+            android:background="@null"
+            android:textColor="@color/blue"/>
+        <TextView
+            android:layout_width="80px"
+            android:layout_height="wrap_content"
+            android:text="@string/icon_lijia"
+            android:id="@+id/txt_leave_mode"
+            android:layout_weight="1.0"/>
+        <Button
+            android:id="@+id/btn_leave_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lijia_moshi"
+            android:layout_weight="1.0"
+            android:background="@null"
+            android:textColor="@color/blue"/>
+        <TextView
+            android:layout_width="80px"
+            android:layout_height="wrap_content"
+            android:text="@string/icon_zidong"
+            android:id="@+id/txt_auto_mode"
+            android:layout_weight="1.0"/>
+        <Button
+            android:id="@+id/btn_auto_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/zidong_moshi"
+            android:layout_weight="1.0"
+            android:background="@null"
+            android:textColor="@color/blue"/>
+        <TextView
+            android:layout_width="80px"
+            android:layout_height="wrap_content"
+            android:text="@string/icon_shuimian"
+            android:id="@+id/txt_sleep_mode"
+            android:layout_weight="1.0"/>
+        <Button
+            android:id="@+id/btn_sleep_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/shuimian_moshi"
+            android:layout_weight="1.0"
+            android:background="@null"
+            android:textColor="@color/blue"/>
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@color/white">-->
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+            <!--android:background="@color/white"/>-->
+    <!--</LinearLayout>-->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:rowCount="6"
+        android:columnCount="3"
+        android:layout_weight="15">
+
+        <LinearLayout
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:layout_margin="0.5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/icon_iconrestart"
+                android:id="@+id/txt_chongQi"/>
+            <Button
+                android:id="@+id/btn_restart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="重启"
+                android:background="@null"
+                android:textColor="@color/blue"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:layout_margin="0.5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/icon_qipao"
+                android:id="@+id/txt_huanQiEr"/>
+            <Button
+                android:id="@+id/btn_aeration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="换气"
+                android:background="@null"
+                android:textColor="@color/blue"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:layout_margin="0.5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/icon_deng"
+                android:id="@+id/txt_deng"/>
+            <Button
+                android:id="@+id/btn_light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="灯"
+                android:background="@null"
+                android:textColor="@color/blue"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:layout_margin="0.5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/icon_chazuo"
+                android:id="@+id/txt_chaZuoYiEr"/>
+            <Button
+                android:id="@+id/btn_socket1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="插座1"
+                android:background="@null"
+                android:textColor="@color/blue"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:layout_margin="0.5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/icon_icon_test"
+                android:id="@+id/txt_men"/>
+            <Button
+                android:id="@+id/btn_door"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="门"
+                android:background="@null"
+                android:textColor="@color/blue"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:layout_margin="0.5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/icon_shuidi2"
+                android:id="@+id/txt_jiaShiEr"/>
+            <Button
+                android:id="@+id/btn_humidification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="加湿"
+                android:background="@null"
+                android:textColor="@color/blue"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:layout_margin="0.5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/icon_tubiao_"
+                android:id="@+id/txt_chaZuoErEr"/>
+            <Button
+                android:id="@+id/btn_socket2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="插座2"
+                android:background="@null"
+                android:textColor="@color/blue"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:layout_margin="0.5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/icon_chuanglian"
+                android:id="@+id/txt_chuangLian"/>
+            <Button
+                android:id="@+id/btn_curtain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="窗帘"
+                android:background="@null"
+                android:textColor="@color/blue"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:layout_margin="0.5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/icon_kongtiao"
+                android:id="@+id/txt_kongTiao"/>
+            <Button
+                android:id="@+id/btn_airCondition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="空调"
+                android:background="@null"
+                android:textColor="@color/blue"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:layout_margin="0.5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/icon_jiantou_copy_copy"
+                android:id="@+id/txt_tiGaoWenDu"/>
+            <Button
+                android:id="@+id/btn_turnUpTemperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="提高温度"
+                android:background="@null"
+                android:textColor="@color/blue"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:layout_margin="0.5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/icon_jiantou"
+                android:id="@+id/txt_jiangDiWenDu"/>
+            <Button
+                android:id="@+id/btn_turnDownTemperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="降低温度"
+                android:background="@null"
+                android:textColor="@color/blue"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:layout_margin="0.5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/icon_shushi"
+                android:id="@+id/txt_shuShiWenDu"/>
+            <Button
+                android:id="@+id/btn_comfortTemperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="舒适温度"
+                android:background="@null"
+                android:textColor="@color/blue"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:layout_margin="0.5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/icon_zhileng"
+                android:id="@+id/txt_zhiLengMoShi"/>
+            <Button
+                android:id="@+id/btn_coolMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="制冷模式"
+                android:background="@null"
+                android:textColor="@color/blue"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:layout_margin="0.5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/icon_songfeng"
+                android:id="@+id/txt_songFengMoShi"/>
+            <Button
+                android:id="@+id/btn_windMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="送风模式"
+                android:background="@null"
+                android:textColor="@color/blue"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:layout_margin="0.5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/icon_hekriconchushi"
+                android:id="@+id/txt_chuShiMoShi"/>
+            <Button
+                android:id="@+id/btn_moistMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="除湿模式"
+                android:background="@null"
+                android:textColor="@color/blue"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:layout_margin="0.5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/icon_nuanqi_"
+                android:id="@+id/txt_zhiNuanMoShi"/>
+            <Button
+                android:id="@+id/btn_warmMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="制暖模式"
+                android:background="@null"
+                android:textColor="@color/blue"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:layout_margin="0.5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/icon_zidongbangding"
+                android:id="@+id/txt_ziDongMoShi"/>
+            <Button
+                android:id="@+id/btn_autoMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="自动模式"
+                android:background="@null"
+                android:textColor="@color/blue"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:layout_margin="0.5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/icon_zengjia"
+                android:id="@+id/txt_zengDaMoShi"/>
+            <Button
+                android:id="@+id/btn_strengthMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="增大模式"
+                android:background="@null"
+                android:textColor="@color/blue"/>
+        </LinearLayout>
+
+
+
+
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/icon_yuyin"-->
+            <!--android:id="@+id/txt_start_speaking"-->
+            <!--android:layout_weight="1"/>-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kaishi_shuohua"
+            android:id="@+id/btn_start_record"
+            android:background="@null"
+            android:textColor="@color/blue"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</LinearLayout>
+    </ScrollView>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.smarthome">
+
+    <!-- android:theme="@style/AppTheme"-->
+    <!--android:icon="@mipmap/ic_launcher"-->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <application
+        android:name="com.example.smarthome.Application.ConnectionApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/tubiaobiao"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/FlowTheme"
+        android:hardwareAccelerated ="true"
+        android:usesCleartextTraffic="true"
+        android:fullBackupContent="true">
+        <meta-data
+            android:name="com.baidu.speech.APP_ID"
+            android:value="16261791"/>
+        <meta-data
+            android:name="com.baidu.speech.API_KEY"
+            android:value="737ndl6pED37wFTdmxhkxR8l"/>
+        <meta-data
+            android:name="com.baidu.speech.SECRET_KEY"
+            android:value="rET22rMF81cn3kX61WvWNDR1MAnLblZt"/>
+        <service android:name="com.baidu.speech.VoiceRecognitionService" android:exported="false" />
+        <activity android:name=".Activity.MainActivity"
+            android:hardwareAccelerated="true"
+            android:configChanges="orientation|screenSize|keyboardHidden"></activity>
+        <!--<activity android:name=".Activity.MainFourActivity">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        <!--</activity>-->
+
+        <activity android:name=".Activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Activity.ChooseTwoActivity"
+        android:hardwareAccelerated="true"
+        android:configChanges="orientation|screenSize|keyboardHidden"></activity>
+
+        <activity android:name=".Activity.LoginActivity"
+            android:hardwareAccelerated="true"
+            android:configChanges="orientation|screenSize|keyboardHidden"></activity>
+
+        <activity android:name=".Activity.RegisterActivity"
+            android:hardwareAccelerated="true"
+            android:configChanges="orientation|screenSize|keyboardHidden"></activity>
+
+        <activity android:name=".Activity.MainTwoActivity"
+            android:hardwareAccelerated="true"
+            android:configChanges="orientation|screenSize|keyboardHidden"></activity>
+
+        <activity android:name=".Activity.MainFourActivity"
+            android:hardwareAccelerated="true"
+            android:configChanges="orientation|screenSize|keyboardHidden"></activity>
+    </application>
+
+
+</manifest>
